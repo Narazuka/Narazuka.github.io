@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100%;
+
+}
+
+.font-26 {
+    font-size: 26px;
+}
+
+.font-18 {
+    font-size: 18px;
+} 
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.bg-custom-1 {
+    background-color: #f2f9ff;
+}
+
+
+.jumbotron {
+    padding-top: 2rem;
+    background-color: #e2edff;
+}
+
+#my-profile {
+    width: 430px;
+    object-fit: cover;
+    object-position: top center;
+    
+}
+
+#projects {
+    padding-top: 2rem;
+    background-color: #e2edff;
+
+}
+#certificate {
+    padding-top: 2rem;
+    background-color: #e2edff;
+
+}
+
+.device {
+    padding: 2%;
+}
+
+.card {
+    min-height: 550px;
+    max-height: 25%;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    flex-direction: row;
+}
+
+.card-img-top {
+    width: 100%;
+    min-height: 100%;
+}
+
+section {
+    padding-top: 10rem;
+}
+
+.quote {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+}
+
+.quote .box {
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+    width: 500px;
+    grid-row-end: 400px;
+}
+
+.quote .box :hover {
+    box-shadow: -20px 50px 100px rgba(0, 0, 0, .10);
+}
+
+.quote .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background: white;
+
+}
+
+.quote .box.box:hover~.bg,
+.quote .box.box:hover {
+    opacity: 1;
+    background: #e2edff;
+}
+
+.quote .box p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.quote .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .2);
+    position: none;
+}
+
+.quote .box::after {
+    content: url(quote.png);
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: .1;
+    background: rgba(255, 255, 255, .2);
+    position: none;
+    filter: invert(1);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bordered {
+    border-left: 1rem solid coral;
+    background-color: #e2edff;
+    margin: 0 .15rem;
+}
+
+.bordered-volunteer {
+    border-left: 5px solid coral;
+    background-color: #e2edff;
+    margin: 0 .15rem;
+}
